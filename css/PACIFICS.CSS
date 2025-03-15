@@ -1,5 +1,10 @@
+*{
+    box-sizing: border-box;
+}
 body{
-    background-color:#FFFFFF;
+    background-color:#90C7E3;
+    background-image: linear-gradient(#90C7E3,#FFFFFF);
+    background-repeat: no-repeat;
     color:#666666;
     font-family:Arial, Helvetica, sans-serif;
 }
@@ -8,8 +13,9 @@ header{
     background:url(../images/sunset.jpg) no-repeat right;
     background-color:#000033;
     color:#FFFFFF;
-    line-height:400%;
-    text-indent:1em;
+    height:60px;
+    text-align:center;
+    padding-top:15px;
 }
 
 h1,h2,h3{
@@ -17,50 +23,82 @@ h1,h2,h3{
 }
 
 h1{
+    margin-top:0px;
     margin-bottom:0px;
+    font-size: 300%;
+    letter-spacing: 0.25em;
 }
-
+nav,main{
+    display:inline-block;
+    vertical-align: top;
+}
 nav {
-    background-color:#90C7E3;
+    background-color:#FFFFFF;
     font-weight:bold;
+    font: size 150px; ;
+    text-align:center;
+    padding:10px;
+    width: 30%;
 }
-
+nav ul{
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 120%;
+}
 h2,h3{
     color:#000033;
+}
+
+h2{
+    text-shadow: 2px 2px #CCCCCC;
 }
 
 ul{
     list-style-image: url(../images/marker.gif);
 }
 
+main{
+    background-color: #FFFFFF;
+    padding:1px 20px 20px;
+    width: 70%;
+}
+
 footer{
     font-size:75%;
+    padding:20px;
 }
-table,th,td{
-  border: 2px solid #3399cc;
- border-collapse: collapse;
-}
-tbody > tr:nth-last-of-type(odd){
-background-color: #b1e0f2;
 
+table, th, td{
+    border:2px solid #3399CC;
+    border-collapse:collapse;
 }
-th,td{
-    padding: 0.5em;
+
+tbody > tr:nth-of-type(odd) {
+    background-color: #b1e0f2;
 }
+
+th, td{
+    padding:0.5em;
+}
+
 td{
-    text-align: center;
+    text-align:center;
 }
+
 label,textarea{
-    display: block;
+    display:block;
 }
+
 input,textarea{
-    margin-bottom: 1.5em;
+    margin-bottom:1.5em;
 }
+
 .required{
-    color: #f80b0b;
+    color: #e61d1d;
 }
+
 .left{
-    text-align: left;
+    text-align:left;
 }
 
 .resort{
@@ -72,3 +110,32 @@ input,textarea{
     font-size:90%;
 }
 
+#wrapper{
+    width:80%;
+    margin:auto;
+    background-color:#FFFFFF;
+    min-width:960px;
+    max-width:1500px;
+    box-shadow:3px 3px #333333;
+}
+
+#homehero{
+    height:300px;
+    background-image: url(../images/coast.jpg);
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+
+#yurthero{
+    height:300px;
+    background-image: url(../images/yurt.jpg);
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+
+#trailhero{
+    height:300px;
+    background-image: url(../images/trail.jpg);
+    background-repeat: no-repeat;
+    background-size:100%;
+}
